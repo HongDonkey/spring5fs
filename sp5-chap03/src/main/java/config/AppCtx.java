@@ -11,10 +11,11 @@ import spring.MemberPrinter;
 import spring.MemberRegisterService;
 import spring.VersionPrinter;
 
-@Configuration
+@Configuration // 스프링 설정 클래스(이 애노테이션을 붙여야 스프링 설정 클래스로 사용 가능)
 public class AppCtx {
 
-	@Bean
+	@Bean // 해당 메서드가 생성한 객체를 스프링 빈이라고 함(@Bean)
+		  // @Bean이 붙은 각각의 메서드마다 빈 객체를 생성함
 	public MemberDao memberDao() {
 		return new MemberDao();
 	}
