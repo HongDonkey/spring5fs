@@ -23,7 +23,7 @@ public class AppCtx {
 	@Bean
 	public MemberRegisterService memberRegSvc() {
 		return new MemberRegisterService(memberDao());
-	}
+	}	
 	
 	@Bean
 	public ChangePasswordService changePwdSvc() {
