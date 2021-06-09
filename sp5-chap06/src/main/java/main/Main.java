@@ -15,8 +15,15 @@ public class Main {
 				new AnnotationConfigApplicationContext(AppCtx.class);
 
 		Client client = ctx.getBean(Client.class);
-		client.send();
-
+		
+//		client.send();
+		
+		System.out.println("^");
+		
+		Test me = Test.getInstance();
+		me.printString("a");
+		
+		System.out.println("^");
 		ctx.close();
 	}
 

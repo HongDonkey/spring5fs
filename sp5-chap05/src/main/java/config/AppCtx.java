@@ -10,7 +10,7 @@ import spring.MemberSummaryPrinter;
 import spring.VersionPrinter;
 
 @Configuration
-@ComponentScan(basePackages = {"spring"})
+@ComponentScan(basePackages = {"spring","spring2"})
 public class AppCtx {
 
 	@Bean
