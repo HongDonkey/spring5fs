@@ -18,12 +18,6 @@ public class Main {
 		
 //		client.send();
 		
-		System.out.println("^");
-		
-		Test me = Test.getInstance();
-		me.printString("a");
-		
-		System.out.println("^");
 		ctx.close();
 	}
 
