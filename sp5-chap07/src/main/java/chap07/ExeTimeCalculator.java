@@ -1,5 +1,7 @@
 package chap07;
 
+import java.io.PrintStream;
+
 public class ExeTimeCalculator implements Calculator {
 
 	private Calculator delegate;
