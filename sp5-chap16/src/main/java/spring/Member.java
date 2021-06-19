@@ -2,6 +2,8 @@ package spring;
 
 import java.time.LocalDateTime;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonFormat.Shape;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 public class Member {
@@ -11,7 +13,10 @@ public class Member {
 	@JsonIgnore
 	private String password;
 	private String name;
-	//@JsonFormat(shape = Shape.STRING)
+	@JsonFormat(shape = Shape.STRING)  //ISO - 8601 형식으로 변환
+	//ex) "2018-03-01T11:07:49"
+//	@JsonFormat(pattern = "yyyyMMddHHmmss") // 원하는 형식으로 변환
+	//ex) "20180301020749
 	private LocalDateTime registerDateTime;
 
 	public Member(String email, String password,
